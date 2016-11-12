@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <display-name>Aplikasi</display-name>
+    <servlet>
+        <display-name>Mahasiswa</display-name>
+        <servlet-name>Mahasiswa</servlet-name> 
+        <servlet-class>com.aplikasi.controller.mhsControllerServlet</servlet-class> 
+    </servlet>
+    <servlet>
+        <display-name>Success</display-name>
+        <servlet-name>Success</servlet-name>
+        <servlet-class>com.aplikasi.controller.Success</servlet-class>
+        
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Mahasiswa</servlet-name>
+        <url-pattern>/Home</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Success</servlet-name>
+        <url-pattern>/Success</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>Home.html</welcome-file>
+    </welcome-file-list>
+    </web-app>

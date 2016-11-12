@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Mahasiswa</title>
+    </head>
+    <body>
+         <h1 align="center">Form Biodata</h1>
+         <form name="frm_html" action="Home" method="POST">
+         <table border="0" align="center">
+                    <tr><td>NIM  	 	  :</td><td> <input align="center" type="text" name="txt_nim"><br></td></tr>				
+                    <tr><td>Nama 	 	  :</td><td><input type="text" name="txt_nama"><br></td></tr>
+                    <tr><td>Alamat :</td>
+                        <td><textarea input type="" value="reset" name ="" cols="50" rows="7" placeholder="masukan alamat"></textarea></td></tr>
+                    <tr><td>Jenis Kelamin         :</td>
+			<td><input type="radio" name="jenkel" value="Pria" > Pria<br>
+                            <input type="radio" name="jenkel" value="Wanita"> Wanita<br></td></tr>
+                    <tr><td>No.Telp  	 	  :</td><td> <input align="center" type="text" name="txt_no_telp"><br></td></tr>
+                    <tr><td>Fakultas	  :</td>
+                        <td><select name="cmb_fakultas">
+				<option value="FTI">FTI</option>
+				<option value="FE">FE</option>
+				<option value="FIKOM">FIKOM</option>
+				<option value="FISIP">FISIP</option>			
+                            </select></td></tr>
+                    <tr><td>Jurusan Universitas Budiluhur	  :</td>
+                        <td><select name="cmb_jurusan">
+                                <option value="" disabled="disabled">-Pilih Jurusan-</option> 
+				<option value="SI">Sistem Informasi</option>
+				<option value="TI">Teknik Informatika</option>
+				<option value="SK">Sistem Komputer</option>
+				<option value="B">Broadcasting</option>
+                                <option value="PR">Public relation</option>
+                                <option value="Eko">Ekonomi</option>
+                            </select></td></tr>                    
+                    <tr><td>IPK 	 	  :</td><td><input type="text" name="txt_ipk"><br></td></tr>
+                    <tr><td>Test : </td>
+                 <td><select name=mytextarea size=2>
+            <option name=one value=one> one </option>
+            <option name=two value=two> two </option>
+            <option name=three value=three> three </option>
+            <option name=four value=four> four </option>
+            </select></td></tr>
+		</table>
+             <br><br><center><input type="submit" name="submit" value="Simpan" />
+             <a href="daftar_mahasiswa.jsp"><input type="submit" value="List Mahasiswa"/></a></center>
+             
+        </form>
+    </body>
+</html>

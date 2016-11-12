@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 10, 2016 9:58:09 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.aplikasi.bean.Mahasiswa" table="mahasiswa" catalog="jwp" optimistic-lock="version">
+        <id name="nim" type="string">
+            <column name="nim" length="11" />
+            <generator class="assigned" />
+        </id>
+        <property name="nama" type="string">
+            <column name="nama" length="200" />
+        </property>
+        <property name="alamat" type="string">
+            <column name="alamat" length="65535" />
+        </property>
+        <property name="jenkel" type="string">
+            <column name="jenkel" length="20" />
+        </property>
+        <property name="noHp" type="string">
+            <column name="no_hp" length="15" />
+        </property>
+        <property name="fakultas" type="string">
+            <column name="fakultas" length="50" />
+        </property>
+        <property name="jurusan" type="string">
+            <column name="jurusan" length="50" />
+        </property>
+        <property name="ipk" type="big_decimal">
+            <column name="ipk" precision="3" />
+        </property>
+    </class>
+</hibernate-mapping>
